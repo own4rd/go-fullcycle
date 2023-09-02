@@ -4,8 +4,6 @@ WORKDIR /usr/src/app
 
 COPY go.mod main.go  ./
 
-RUN go mod download
-
 RUN go build -o main .
 
 # ---------------------------------- END BUILDER ---------------------------
